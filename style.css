@@ -1,0 +1,44 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  header{
+    color:darkkhaki;
+    position:sticky;
+    top:0;
+    width:100%;
+    padding: 10px;
+    background-color:darkslategray;
+  }
+  nav{
+    background-color: lightgray;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  img {
+  max-width: 100%;       /* Evita que la imagen se salga de su contenedor */
+  height: auto;          /* Mantiene la proporción original sin deformarse */
+  border-radius: 8px;    /* Bordes redondeados sutiles */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle relieve */
+}
+.tarjeta-articulo {
+  display: flex;             /* Coloca los elementos hijos uno al lado del otro */
+  align-items: center;       /* Alinea verticalmente al centro */
+  gap: 24px;                 /* Espacio de separación entre el texto y la imagen */
+  background-color: #ffffff; /* Fondo blanco para resaltar sobre el fondo general */
+  padding: 24px;             /* Relleno interno */
+  border-radius: 12px;       /* Esquinas redondeadas de la tarjeta */
+  margin-bottom: 30px;       /* Separación respecto al siguiente bloque */
+}
+
+/* Distribución de anchos */
+.columna-texto {
+  flex: 1;                   /* Ocupa el espacio disponible a la izquierda */
+}
+
+.columna-imagen {
+  flex: 1;                   /* Ocupa el espacio proporcional a la derecha */
+  text-align: center;
+}
